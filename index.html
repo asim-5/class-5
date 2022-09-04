@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter a number</h3>
+    <form onsubmit="mod();return false">
+        <input type="number"  id="n1">
+       
+        <button type="submit">Check</button>
+    </form>
+    <h3>(1 = odd / 0 = even)</h3>
+    <h3 id="result"></h2>
+    <script>
+        function mod(){
+        let n1=document.querySelector("#n1").value;
+        n1=  Number(n1);
+        let result = n1%2;
+        document.querySelector("#result").innerHTML = result;
+    
+    }
+    </script>
+</body>
+</html>
